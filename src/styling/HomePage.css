@@ -1,0 +1,78 @@
+/* src/components/HomePage.css */
+.homepage {
+    text-align: center;
+    margin: 20px;
+    padding: 0;
+  }
+  
+  .recipe-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    overflow-y: auto;
+    max-height: 70vh;
+  }
+  /* src/styling/HomePage.css */
+
+/* Plus Button Style */
+.add-recipe-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  @media (max-width: 600px) {
+    .recipe-cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* Modal Overlay Style */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+  }
+  
+  /* Modal Content Style */
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    width: 500px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  /* Close Button Style */
+  .close-modal {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
