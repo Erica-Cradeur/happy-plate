@@ -1,4 +1,5 @@
-/* src/components/RecipeCard.css */
+/* src/styling/RecipeCard.css */
+
 .recipe-card {
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -8,6 +9,11 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .recipe-card:hover {
+    transform: scale(1.05);
   }
   
   .recipe-card img {
@@ -16,14 +22,11 @@
     border-radius: 8px;
   }
   
-  .recipe-card h3 {
-    font-size: 1.25rem;
-    color: #333;
-    margin: 8px 0;
-  }
-  
-  .recipe-card p {
-    font-size: 1rem;
-    color: #666;
+  /* Adjust card width for smaller screens */
+  @media (max-width: 600px) {
+    .recipe-card {
+      width: 90%;
+      margin: 8px auto;
+    }
   }
   
