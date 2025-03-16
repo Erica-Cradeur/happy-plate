@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/happy-plate/static/css/main.36a13c3a.css",
+    "main.js": "/happy-plate/static/js/main.e8210ea5.js",
+    "index.html": "/happy-plate/index.html",
+    "main.36a13c3a.css.map": "/happy-plate/static/css/main.36a13c3a.css.map",
+    "main.e8210ea5.js.map": "/happy-plate/static/js/main.e8210ea5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36a13c3a.css",
+    "static/js/main.e8210ea5.js"
+  ]
+}
